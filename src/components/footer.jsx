@@ -30,9 +30,9 @@ const Footer = () => {
       <div className="flex flex-col p-20 md:p-20 md:flex-row justify-center items-center md:justify-evenly md:items-center space-y-5 md:space-y-0 ">
                 <div className='font-bold text-2xl cursor-pointer flex items-center text-white  '>
                                 <span className='text-3xl text-white mr-1 pt-2'>
-                                    <ion-icon name="book-outline"></ion-icon>
+                                <Link to="/" ><ion-icon name="book-outline"></ion-icon></Link>
                                 </span>
-                                BookStore
+                                <Link to="/" >BookStore</Link>
                  </div>
                 <ul className={`flex flex-col md:flex-row justify-between items-center `}>
                                  {
@@ -48,10 +48,10 @@ const Footer = () => {
                 </ul>
 
                 <div className="socials flex flex-row text-2xl text-white space-x-5">
-                    <span className='cursor-pointer'><ion-icon name="logo-instagram"></ion-icon></span>
-                    <span className='cursor-pointer'><ion-icon name="logo-facebook"></ion-icon></span>
-                    <span className='cursor-pointer'><ion-icon name="logo-youtube"></ion-icon></span>
-                    <span className='cursor-pointer'><ion-icon name="logo-twitter"></ion-icon></span>
+                    <span className='cursor-pointer'><a href="https://www.instagram.com/iGyanendraYadav/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon></a></span>
+                    <span className='cursor-pointer'><a href="https://www.facebook.com/iGyanendraYadav/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook"></ion-icon></a></span>
+                    <span className='cursor-pointer'><a href="https://www.linkedin.com/in/igyanendrayadav/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin"></ion-icon></a></span>
+                    <span className='cursor-pointer'><a href="https://twitter.com/iGyanendraYadav/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-twitter"></ion-icon></a></span>
 
                 </div>
 

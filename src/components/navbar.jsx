@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -21,9 +21,9 @@ const Navbar = () => {
             <div className="md:flex items-center justify-between md:bg-[#f2f5f7] bg-white py-4 px-7 md:px-10">
                 <div className='font-bold text-2xl cursor-pointer bg-white md:bg-[#f2f5f7] flex items-center text-gray-800  '>
                     <span className='text-3xl text-gray-800 mr-1 pt-2'>
-                        <ion-icon name="book-outline"></ion-icon>
+                    <Link to="/" ><ion-icon name="book-outline"></ion-icon></Link> 
                     </span>
-                    BookStore
+                    <Link to="/" >BookStore</Link> 
                 </div>
 
                 <div onClick={()=>{setOpen(!open)}} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden  '>
