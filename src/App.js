@@ -10,6 +10,7 @@ import Contact from './components/contact'
 import Error from './components/error'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Blogpost from './components/blogpost'
+import ScrollToTop from './components/scrollToTop'
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path='/blog/:blogpost' element={<Blogpost/>} />
         <Route path="*" element={<Error/>} />
       </Routes>
+      <ScrollToTop/>
       <Footer/>
     </Router>
 
